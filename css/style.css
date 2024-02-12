@@ -9,6 +9,41 @@
   font-weight: normal;
   font-style: normal;
 }
+#chat-popup {
+  h5 {
+    margin-bottom: 0 !important;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .bot-flex {
+    font-size: 13px !important;
+  }
+}
+@media screen and (min-width: 760px) {
+  #chat-popup {
+    width: 370px;
+  }
+}
+@media screen and (max-width: 760px) {
+  #colorlib-hero {
+    margin-bottom: 0 !important;
+  }
+  .colorlib-about {
+    padding-bottom: 0 !important;
+  }
+  .colorlib-services {
+    padding-bottom: 0 !important;
+  }
+  .colorlib-education {
+    padding-bottom: 0 !important;
+  }
+  .colorlib-experience {
+    padding-bottom: 0 !important;
+  }
+}
 
 /* =======================================================
 *
@@ -99,7 +134,14 @@ figure figcaption {
   overflow: hidden;
   position: relative;
 }
-
+#chat-bubble {
+  width: 50px !important;
+  height: 50px !important;
+}
+#msg-icon {
+  width: 30px !important;
+  height: 30px !important;
+}
 #colorlib-aside {
   padding-top: 3em;
   padding-bottom: 40px;
@@ -298,15 +340,16 @@ figure figcaption {
 
 #colorlib-hero {
   min-height: 500px;
-  background: #fff url(../images/loader.gif) no-repeat center center;
+  /* background: #fff url(../images/loader.gif) no-repeat center center; */
   width: 100%;
   float: left;
+  z-index: -1;
   margin-bottom: 10em;
   clear: both;
 }
 #colorlib-hero .flexslider {
   border: none;
-  z-index: 1;
+  z-index: 0;
   margin-bottom: 0;
 }
 #colorlib-hero .flexslider .slides {
