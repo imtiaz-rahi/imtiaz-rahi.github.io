@@ -1900,3 +1900,10 @@ body.offcanvas .colorlib-nav-toggle {
   width: 55px; /* Set the width */
   height: 65px; /* Set the height */
 }
+#chat-input {
+  color: #000;
+}
+
+.bot-bottom-20 {
+  bottom: 5.2rem !important;
+}
